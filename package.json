@@ -1,0 +1,13 @@
+{
+  "name": "bigscreenweb",
+  "description": "Big Screen Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "http": "^0.0.0"
+  }
+}

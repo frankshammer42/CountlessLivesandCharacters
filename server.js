@@ -25,6 +25,13 @@ web_clients_connection.on('connection', (socket) => {
         console.log("client wrote " + character);
         unity_client_connection.emit("unity_character_in", character);
     });
+
+    socket.on('client_sentence_in', function(data){
+        console.log("client want a sentence");
+        unity_client_connection.emit("unity_sentence_in");
+    });
+
+
     //TODO: Have response for character formed
 });
 

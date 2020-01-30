@@ -6,3 +6,8 @@ function textInputSubmit() {
     socket.emit("client_character_in", data);
     document.getElementById("demo").innerHTML = userData;
 }
+
+function sentenceInputSubmit() {
+    socket.emit("client_sentence_in");
+    document.getElementById("demo").innerHTML = "Draw sentence";
+}
